@@ -67,6 +67,10 @@ hi def link coffeeSpecialVar Special
 syn match coffeeSpecialIdent /@\%(\%(\I\|\$\)\%(\i\|\$\)*\)\?/ display
 hi def link coffeeSpecialIdent Identifier
 
+" Highlight the this symbol.
+syn match coffeeThis "\v\@"
+hi def link coffeeThis Keyword
+
 " A class-like name that starts with a capital letter
 syn match coffeeObject /\<\u\w*\>/ display
 hi def link coffeeObject Structure
